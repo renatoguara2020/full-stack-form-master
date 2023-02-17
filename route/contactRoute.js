@@ -17,28 +17,28 @@ const nodemailer = require('nodemailer');
 // 3.deliver a message with sendmail
 
 
-router.post('/contact', (req, res)=>{
-    let data = req.body;
+// router.post('/contact', (req, res)=>{
+//     let data = req.body;
 
-    // if the fields are empty we want to appear a message
-    if(data.name.length===0 || data.email.length===0 || data.message.length===0){
+//     // if the fields are empty we want to appear a message
+//     if(data.name.length===0 || data.email.length===0 || data.message.length===0){
       
-     return res.json({msg:"Please fill all the fields"})
+//      return res.json({msg:"Please fill all the fields"})
 
-    }
+//     }
 
 
 //   we create a transporter
 let smtpTransport = nodemailer.createTransport({
 
-    service:'yahoo',
+    service:'gmail',
     // the connect port
     port:587,
 
     // authenticate
     auth:{
-        user:'renatoguara2019@yahoo.com',
-        pass:'456'
+        user:'renatoguara2020@gmail.com',
+        pass:'agciqp'
     }
 })
 
@@ -83,7 +83,7 @@ res.status(200).json({msg:'Message was sent succesfullly'})
 
 
 
-})
+//})
 
 
 
