@@ -37,8 +37,8 @@ let smtpTransport = nodemailer.createTransport({
 
     // authenticate
     auth:{
-        user:'odkolas@gmail.com',
-        pass:'file@mou@21'
+        user:'renatoguara2020@gmail.com',
+        pass:'agciqpqrqferdazp'
     }
 })
 
