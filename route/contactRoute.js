@@ -31,9 +31,9 @@ router.post('/contact', (req, res)=>{
 //   we create a transporter
 let smtpTransport = nodemailer.createTransport({
 
-    service:'Gmail',
+    service:'gmail',
     // the connect port
-    port:465,
+    port:587,
 
     // authenticate
     auth:{
@@ -46,7 +46,7 @@ let smtpTransport = nodemailer.createTransport({
 // define the mailoptions
 let mailOptions = {
     from:data.email,
-    to:'odkolas@gmail.com',
+    to:'renatoguara2019@yahoo.com',
     subject:`Message from ${data.name}`,
     html:`
     
